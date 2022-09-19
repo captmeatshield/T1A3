@@ -88,15 +88,42 @@ legs = [
     'Seated Calf Raise',
 ]
 
-corrective = {
+#Upper Abs, Lower Abs, Obliques, Transverse Abdominis, Serratus
+core = [
+    'Crunch',
+    'Sit up',
+    'Bicycle Crunch',
+    'Cable Crunch',
+    'Hanging Leg Raise',
+    'Hanging Knee Raise',
+    'Plank',
+    'Leg Raise',
+    'Cable Twist',
+    'Cable Twist High to Low',
+    'Cable Twist Low to High',
+    'Reverse Crunch',
+    'Hanging Leg Spirals',
+    'Flutter Kicks'
+
+
+
+]
+
+corrective = [
     'Face Pull',
     'Rotator Cuff Cable Pull',
     'Rotator Cuff Dumbbell Pull',
     'Crab Walks',
     'Angels and Devils',
-
-
-}
+    'Supermans',
+    'Pull Aparts',
+    'Wall Angels',
+    'Hamstring Wall Stretch',
+    'Banded Toe Pulls',
+    'Lunge and Reach',
+    'Thoracic spine Overhead Stretch',
+    'Wall Rotations'
+]
 
 
 def shoulders(self):
