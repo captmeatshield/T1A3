@@ -26,3 +26,13 @@
 # - writing a script which turns the application into an executable
 
 
+import exercises
+
+print("Hello lets start building your program")
+
+program = {}
+for x in range(1, 15):
+    program["Day{0}".format(x)] = [input("Enter a exercise")]
+    continue
+
+print(program)

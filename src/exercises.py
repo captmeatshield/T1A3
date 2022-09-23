@@ -9,7 +9,7 @@ shoulders = [
     'Front Raise',
     'Rear Delt Row'
     'Z Press',
-    'Handstand Pushup'
+    'Handstand Pushup',
 ]
 
 # Tricep Longhead, Tricep Lateral Head, Medial Head, Bicep Longhead, Bicep Shorthead, brachialis
@@ -104,9 +104,6 @@ core = [
     'Reverse Crunch',
     'Hanging Leg Spirals',
     'Flutter Kicks'
-
-
-
 ]
 
 corrective = [
@@ -125,5 +122,19 @@ corrective = [
     'Wall Rotations'
 ]
 
+cardio = [
+    'Aerobics',
+    'Battle Ropes',
+    'Cycling',
+    'Elliptical Machine',
+    'Rowing',
+    'Running',
+    'Swimming',
+    'Sprints',
+    'Burpees',
+    'Jump Rope',
+    'Jumping Jacks',
+]
 
-def shoulders(self):
+exercises_all = shoulders + arms + chest + back + legs + core + corrective + cardio
+# print(exercises_all_t)
