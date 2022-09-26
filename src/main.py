@@ -28,20 +28,32 @@
 
 import exercises
 import exercise_check
+# import exceptions
 
 print("Hello lets start building your program")
-name = input("What is your name?")
+name = input("What is your name? ")
 # count = 0
 program = {}
 for x in range(1, 3):
-    exercise = input("Enter a exercise or press enter for a rest day: ")
-    print(exercise_check.ex_check.is_exercise(exercise))
-
-    program["Day {0}".format(x)] = [exercise]
+    exercise = input(f"Enter a exercise for Day {x} or press enter for a rest day: ")
+    if exercise_check.ex_check.is_exercise(exercise) == True:
+        program["Day {0}".format(x)] = [exercise]
+    elif exercise == "":
+        program["Day {0}".format(x)] = ["Rest"]
+        print(f"Day {x} is a rest day.")
+        continue
+    else:
+        print(f"{exercise} is not a valid exercise")
+        program["Day {0}".format(x)] = []
     # count = 1
     next_ex = input("Do you want to add any other exercise to your program? yes or no? ")
     while next_ex == 'yes':
-        program["Day {0}".format(x)] = program["Day {0}".format(x)] + [input("Enter a exercise: ")]
+        exercise = input("Enter a exercise: ")
+        if exercise_check.ex_check.is_exercise(exercise) == True:
+            program["Day {0}".format(x)] = program["Day {0}".format(x)] + [exercise]
+        else:
+            print(f"{exercise} is not a valid exercise")
+            exercise_check.ex_check.valid_exercise()
         # count += 1 
         next_ex = input("Do you want to add any other exercise to your program yes or no? ")
         if next_ex == 'no':
@@ -49,7 +61,7 @@ for x in range(1, 3):
     else:
         continue 
 
-f = open(name , "w+")
+f = open(f'{name}.txt', "w+")
 f.write(str(program))
 f.close()
 

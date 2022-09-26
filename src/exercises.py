@@ -7,7 +7,7 @@ shoulders = [
     'Cable Lateral raise',
     'Reverse Fly',
     'Front Raise',
-    'Rear Delt Row'
+    'Rear Delt Row',
     'Z Press',
     'Handstand Pushup',
 ]

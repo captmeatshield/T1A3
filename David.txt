@@ -1,0 +1,1 @@
+{'Day 1': ['Rest'], 'Day 2': ['Dead Lift', 'Face Pull']}
