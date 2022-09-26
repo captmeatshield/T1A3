@@ -1,6 +1,6 @@
 import exercises
 
-class ex_check:
+class Excheck:
 
     @classmethod
     def is_exercise(self, exercise):
@@ -26,6 +26,10 @@ class ex_check:
             return print(f"The Exercises available for this exercise are: {exercises.cardio}")
         else:
             return print("Invalid input")
-
-
-        
+    
+    def day_volume(self):
+        for k, v in self.items():
+            if len(v) > 2:
+                print(f"{k} has too many exercises for a day")
+            else:
+                continue

@@ -35,7 +35,7 @@ name = input("What is your name? ")
 program = {}
 for x in range(1, 3):
     exercise = input(f"Enter a exercise for Day {x} or press enter for a rest day: ")
-    if exercise_check.ex_check.is_exercise(exercise) == True:
+    if exercise_check.Excheck.is_exercise(exercise) == True:
         program["Day {0}".format(x)] = [exercise]
     elif exercise == "":
         program["Day {0}".format(x)] = ["Rest"]
@@ -47,11 +47,11 @@ for x in range(1, 3):
     next_ex = input("Do you want to add any other exercise to your program? yes or no? ")
     while next_ex == 'yes':
         exercise = input("Enter a exercise: ")
-        if exercise_check.ex_check.is_exercise(exercise) == True:
+        if exercise_check.Excheck.is_exercise(exercise) == True:
             program["Day {0}".format(x)] = program["Day {0}".format(x)] + [exercise]
         else:
             print(f"{exercise} is not a valid exercise")
-            exercise_check.ex_check.valid_exercise()
+            exercise_check.Excheck.valid_exercise()
 
         next_ex = input("Do you want to add any other exercise to your program yes or no? ")
         if next_ex == 'no':
@@ -59,17 +59,14 @@ for x in range(1, 3):
     else:
         continue 
 
-for k, v in program.items():
-    if len(v) > 2:
-        print(f"{k} has too many exercises for a day")
-    else:
-        continue
+exercise_check.Excheck.day_volume(program)
 
 
 
-f = open(f'{name}.txt', "w+")
-f.write(str(program))
-f.close()
+
+# f = open(f'{name}.txt', "w+")
+# f.write(str(program))
+# f.close()
 
 
 

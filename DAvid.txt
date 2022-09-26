@@ -1,1 +1,0 @@
-{'Day 1': ['Seated Calf Raise', 'Kettlebell Swing'], 'Day 2': ['Tripod Row']}
