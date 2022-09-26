@@ -27,22 +27,26 @@
 
 
 import exercises
+import exercise_check
 
 print("Hello lets start building your program")
-count = 0
+# count = 0
 program = {}
 for x in range(1, 3):
-    program["Day {0}".format(x)] = [input("Enter a exercise or press enter for a rest day: ")]
-    count = 1
-    next_ex = input("Do you want to add any other exercise to your program? yes or no")
+    exercise = input("Enter a exercise or press enter for a rest day: ")
+    print(exercise_check.ex_check.is_exercise(exercise))
+    program["Day {0}".format(x)] = [exercise]
+    # count = 1
+    next_ex = input("Do you want to add any other exercise to your program? yes or no? ")
     while next_ex == 'yes':
-        program["Day {0}".format(x)] = program["Day {0}".format(x)] + [input("Enter a exercise")]
-        count += 1 
+        program["Day {0}".format(x)] = program["Day {0}".format(x)] + [input("Enter a exercise: ")]
+        # count += 1 
         next_ex = input("Do you want to add any other exercise to your program yes or no? ")
         if next_ex == 'no':
             break
     else:
         continue
+
 
 
 print(program)
