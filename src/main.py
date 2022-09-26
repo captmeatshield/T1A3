@@ -32,7 +32,6 @@ import exercise_check
 
 print("Hello lets start building your program")
 name = input("What is your name? ")
-# count = 0
 program = {}
 for x in range(1, 3):
     exercise = input(f"Enter a exercise for Day {x} or press enter for a rest day: ")
@@ -45,7 +44,6 @@ for x in range(1, 3):
     else:
         print(f"{exercise} is not a valid exercise")
         program["Day {0}".format(x)] = []
-    # count = 1
     next_ex = input("Do you want to add any other exercise to your program? yes or no? ")
     while next_ex == 'yes':
         exercise = input("Enter a exercise: ")
@@ -54,12 +52,20 @@ for x in range(1, 3):
         else:
             print(f"{exercise} is not a valid exercise")
             exercise_check.ex_check.valid_exercise()
-        # count += 1 
+
         next_ex = input("Do you want to add any other exercise to your program yes or no? ")
         if next_ex == 'no':
             break
     else:
         continue 
+
+for k, v in program.items():
+    if len(v) > 2:
+        print(f"{k} has too many exercises for a day")
+    else:
+        continue
+
+
 
 f = open(f'{name}.txt', "w+")
 f.write(str(program))

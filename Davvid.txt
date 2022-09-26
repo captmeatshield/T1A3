@@ -1,0 +1,1 @@
+{'Day 1': ['Dip', 'Dip', 'Dip', 'Dip'], 'Day 2': ['Dip', 'Dip', 'Dip', 'Dip']}

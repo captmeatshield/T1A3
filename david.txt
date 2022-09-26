@@ -1,1 +1,1 @@
-{'Day 1': ['Rest'], 'Day 2': ['Dumbbell Curl', 'Bench Fly']}
+{'Day 1': ['Dip', 'Dip', 'Dip'], 'Day 2': ['Rest']}
