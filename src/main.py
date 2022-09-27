@@ -31,6 +31,7 @@ import exercise_check
 # import exceptions
 import exvalue
 import pmaker
+from fitness_tools.exercise.rm_estimator import RM_Estimator
 
 print("Hello lets start building your program")
 # name = input("What is your name? ")

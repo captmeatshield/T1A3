@@ -20,6 +20,17 @@
 1. Install latest version of [Python](https://www.python.org/downloads/)
 2. Install pip 
    ```
-   python3 -m pip install
+   python3 -m pip install --upgrade pip
    ```
-3. 
+3. Clone repository from Github
+   ```
+   git clone https://github.com/meatsheild/T1A3.git
+   ```
+4. Change Directory to src folder
+   ```
+   cd T1A3/src/
+   ```
+5. Open application
+   ```
+   ./Program_builder.sh
+   ```
