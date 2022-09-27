@@ -75,7 +75,7 @@ chest = [
     'One Arm Crossover',
 ]
 
-chest_val = [
+chest_val = {
     'Bench Fly' : 2,
     'Pushup' : 2,
     'Floor Fly' : 2,
@@ -87,7 +87,7 @@ chest_val = [
     'Dumbbell Bench Press' : 2,
     'Barbell Bench Press' : 2,
     'One Arm Crossover' : 2,
-]
+}
 
 #Lats, Upper Traps, Lower Traps, Lower Back, Rotator Cuff, Teres Major, Rhomboids
 back = [
@@ -106,7 +106,7 @@ back = [
     'Hyper Extension',
 ]
 
-back_val = [
+back_val = {
     'Dead Lift' : 2,
     'Pendlay Row' : 2,
     'Tripod Row' : 2,
@@ -120,7 +120,7 @@ back_val = [
     'Pullup' : 2,
     'Barbell Row' : 2,
     'Hyper Extension' : 2,
-]
+}
 
 #Vastus Medialias Quad, Vastus Lateralis Quad, Vastus intermedius Quad, Rectus Femerus Quad, Lateral Hamstring, Medial Hamstring, Glute medius, Glute maximus, calfs.
 legs = [

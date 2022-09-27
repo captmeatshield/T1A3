@@ -29,6 +29,8 @@
 import exercises
 import exercise_check
 # import exceptions
+import exvalue
+import pmaker
 
 print("Hello lets start building your program")
 name = input("What is your name? ")
@@ -60,6 +62,9 @@ for x in range(1, 3):
         continue 
 
 exercise_check.Excheck.day_volume(program)
+exvalue.Value.get_value(program)
+pmaker.Pmaker.fprog(program)
+
 
 
 
