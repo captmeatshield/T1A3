@@ -1,7 +1,7 @@
 ## Source Control Repository
-![https://github.com/meatsheild/T1A3] Repository
+[Repository](https://github.com/meatsheild/T1A3)
 ## Coding Conventions
-![https://peps.python.org/pep-0008/] 
+[PEP Style Guide](https://peps.python.org/pep-0008/)
 ## App Features
 
 ### F1 - variables and variable scope
@@ -11,14 +11,15 @@
 ### F3 - error handling
 
 ## Implementation plan
-![https://trello.com/invite/b/qjNj2AyZ/298b961fe1fcbf5b66154e7099100f3c/terminal-app] Trello implementation plan
+[https://trello.com/invite/b/qjNj2AyZ/298b961fe1fcbf5b66154e7099100f3c/terminal-app] Trello implementation plan
 
 ## Documentation
 
-### installation
-### dependencies to operate
-### system/hardware requirements
-### how to use command line args for app
+### Installation
 
-
-## Slide deck
+1. Install latest version of [Python](https://www.python.org/downloads/)
+2. Install pip 
+   ```
+   python3 -m pip install
+   ```
+3. 
