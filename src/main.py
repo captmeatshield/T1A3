@@ -13,8 +13,12 @@ while True:
         break
     except ValueError:
         print("Please enter A Whole Number")
+    else:
+        print("else reached")
+        d = 3
+        break
 
-# name = input("What is your name? ")
+name = input("What is your name? ")
 program = {}
 
 for x in range(1, d + 1):
@@ -43,7 +47,7 @@ for x in range(1, d + 1):
     else:
         continue
 
-# exercise_check.Excheck.day_volume(program)
+exercise_check.Excheck.day_volume(program)
 sh_vol, ar_vol, ch_vol, ba_vol, le_vol, core_vol, corr_vol, card_vol = exvalue.Value.get_value(program)
 total_vol = [sh_vol, ar_vol, ch_vol, ba_vol, le_vol, core_vol, corr_vol, card_vol]
 print(f"Over {d} days your total volume score is {sh_vol} for Shoulders, {ar_vol} for Arms, {ch_vol} for Chest, {ba_vol} for Back, {le_vol} for Legs")
@@ -54,9 +58,9 @@ print(f"Your Accessory Exercise Score is {core_vol} for Core, {corr_vol} for Cor
 
 
 
-# f = open(f'{name}.txt', "w+")
-# f.write(str(program))
-# f.close()
+f = open(f'{name}.txt', "w+")
+f.write(str(program))
+f.close()
 
 
 
