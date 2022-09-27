@@ -33,7 +33,7 @@ import exvalue
 import pmaker
 
 print("Hello lets start building your program")
-name = input("What is your name? ")
+# name = input("What is your name? ")
 program = {}
 for x in range(1, 3):
     exercise = input(f"Enter a exercise for Day {x} or press enter for a rest day: ")
@@ -61,9 +61,9 @@ for x in range(1, 3):
     else:
         continue 
 
-exercise_check.Excheck.day_volume(program)
+# exercise_check.Excheck.day_volume(program)
 exvalue.Value.get_value(program)
-pmaker.Pmaker.fprog(program)
+# pmaker.Pmaker.fprog(program)
 
 
 
