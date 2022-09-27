@@ -7,16 +7,17 @@ class Value:
     # day = []
     # count = 0
     def get_value(self):
-    
+
+        shoulder_vol = 0
+        arms_vol = 0
+        chest_vol = 0
+        back_vol = 0
+        legs_vol = 0
+        core_vol = 0
+        corrective_vol = 0
+        cardio_vol = 0
         for j, i in self.items():
-            shoulder_vol = 0
-            arms_vol = 0
-            chest_vol = 0
-            back_vol = 0
-            legs_vol = 0
-            core_vol = 0
-            corrective_vol = 0
-            cardio_vol = 0
+
             
             # for i in self.values():
             for x in range(len(i)):
@@ -44,12 +45,10 @@ class Value:
                 for ca_v, v in exercises.cardio_val.items():
                     if i[x] == ca_v:
                         cardio_vol += v
+        return shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol
 
             # day = {j : [shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol]}
             # total_vol = day
             # count += 1
-        return shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol
         # return total_vol                    
         # return print(shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol)
-            #     print(x)
-            #     print(i)
