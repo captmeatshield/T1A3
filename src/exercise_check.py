@@ -29,7 +29,13 @@ class Excheck:
     
     def day_volume(self):
         for k, v in self.items():
-            if len(v) > 2:
+            if len(v) > 7:
                 print(f"{k} has too many exercises for a day")
+            elif len(v) > 1 and len(v) < 4:
+                print(f"{k} has few exercises you may want to consider adding volume")
             else:
                 continue
+    
+    def week_volume(self):
+        for k, v in self.items():
+            pass

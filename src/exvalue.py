@@ -3,8 +3,11 @@ import exercises
 #  sh_v, ar_v, ch_v, ba_v, le_v, co_v, corr_v, ca_v
 
 class Value:
+    # total_vol = []
+    # day = []
+    # count = 0
     def get_value(self):
-
+    
         for j, i in self.items():
             shoulder_vol = 0
             arms_vol = 0
@@ -14,6 +17,7 @@ class Value:
             core_vol = 0
             corrective_vol = 0
             cardio_vol = 0
+            
             # for i in self.values():
             for x in range(len(i)):
                 for sh_v, v in exercises.shoulders_val.items():
@@ -40,10 +44,12 @@ class Value:
                 for ca_v, v in exercises.cardio_val.items():
                     if i[x] == ca_v:
                         cardio_vol += v
-            day = {j : [shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol]}
-            return day
-        # return shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol
-                        
+
+            # day = {j : [shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol]}
+            # total_vol = day
+            # count += 1
+        return shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol
+        # return total_vol                    
         # return print(shoulder_vol, arms_vol, chest_vol, back_vol, legs_vol, core_vol, corrective_vol, cardio_vol)
             #     print(x)
             #     print(i)
