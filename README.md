@@ -1,7 +1,7 @@
 ## Source Control Repository
-
+![https://github.com/meatsheild/T1A3] Repository
 ## Coding Conventions
-
+![https://peps.python.org/pep-0008/] 
 ## App Features
 
 ### F1 - variables and variable scope
@@ -11,16 +11,7 @@
 ### F3 - error handling
 
 ## Implementation plan
-outlines how each feature will be implemented and a checklist of tasks for each feature
-- prioritise the implementation of different features, or checklist items within a feature
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
-
-Utilise a suitable project management platform to track this implementation plan.
-
-Provide screenshots/images and/or a reference to an accessible project management platform used to track this implementation plan. 
-
-
-> Your checklists for each feature should have at least 5 items.
+![https://trello.com/invite/b/qjNj2AyZ/298b961fe1fcbf5b66154e7099100f3c/terminal-app] Trello implementation plan
 
 ## Documentation
 

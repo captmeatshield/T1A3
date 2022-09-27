@@ -47,24 +47,25 @@ for x in range(1, 3):
         print(f"{exercise} is not a valid exercise")
         program["Day {0}".format(x)] = []
     next_ex = input("Do you want to add any other exercise to your program? yes or no? ")
-    while next_ex == 'yes':
-        exercise = input("Enter a exercise: ")
+    while next_ex != 'no':
+        exercise = input("Enter a exercise or type 'no' to finish: ")
         if exercise_check.Excheck.is_exercise(exercise) == True:
             program["Day {0}".format(x)] = program["Day {0}".format(x)] + [exercise]
+        elif exercise == 'no':
+            break
         else:
             print(f"{exercise} is not a valid exercise")
             exercise_check.Excheck.valid_exercise()
-
-        next_ex = input("Do you want to add any other exercise to your program yes or no? ")
         if next_ex == 'no':
             break
     else:
-        continue 
+        continue
 
 # exercise_check.Excheck.day_volume(program)
-exvalue.Value.get_value(program)
-# pmaker.Pmaker.fprog(program)
+sh_vol, ar_vol, ch_vol, ba_vol, le_vol, co_vol, corr_vol, ca_vol = exvalue.Value.get_value(program)
 
+# pmaker.Pmaker.fprog(program)
+print(sh_vol)
 
 
 

@@ -124,7 +124,7 @@ back_val = {
 
 #Vastus Medialias Quad, Vastus Lateralis Quad, Vastus intermedius Quad, Rectus Femerus Quad, Lateral Hamstring, Medial Hamstring, Glute medius, Glute maximus, calfs.
 legs = [
-    'Dead Lift' 
+    'Dead Lift',
     'Squats',
     'Glute Ham Raise',
     'Barbell Hip Thrust',
@@ -225,7 +225,7 @@ corrective = [
 ]
 
 corrective_val = {
-    'Face Pull' : 2,
+    'Face Pull' : 3,
     'Rotator Cuff Cable Pull' : 2,
     'Rotator Cuff Dumbbell Pull' : 2,
     'Crab Walks' : 2,
